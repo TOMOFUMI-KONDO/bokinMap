@@ -1,7 +1,7 @@
 <?php
 
 
-$rootDir = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . '/bokin-map/';
+$rootDir = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . '/bokin-map/bokin-map/';
 
 //本番環境データベースに接続
 function getDB() {

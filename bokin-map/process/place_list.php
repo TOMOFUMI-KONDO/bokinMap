@@ -1,9 +1,13 @@
 <?php
 
-//localのデータベース情報
-require_once dirname(__FILE__) . '/../database_info/local_database_info.php';
-//本番環境のデータベース情報
-//require_once dirname(__FILE__) . '/../database_info/remote_database_info.php';';
+if (getenv('APP_ENV') === 'development') {
+  //localのデータベース情報
+  require_once dirname(__FILE__) . '/../database_info/local_database_info.php';
+}
+else {
+  //本番環境のデータベース情報
+  require_once dirname(__FILE__) . '/../database_info/remote_database_info.php';
+}
 
 try {
   $db = getDB();
