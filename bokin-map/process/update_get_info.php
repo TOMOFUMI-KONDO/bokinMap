@@ -1,5 +1,7 @@
 <?php
 
+require_once dirname(__FILE__) . '/../config.php';
+
 if (getenv('APP_ENV') === 'development') {
   //localのデータベース情報
   require_once dirname(__FILE__) . '/../database_info/local_database_info.php';
