@@ -1,2 +1,4 @@
 .vagrant/*
 .idea/**/workspace.xml
+bokin-map/test.php
+bokin-map/css/test.css
