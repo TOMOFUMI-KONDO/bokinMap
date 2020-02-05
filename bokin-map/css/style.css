@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.1);
+}
+
+header {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+main {
+  width: 100%;
+}
+
+main .map {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  height: 500px;
+}
+
+main .form {
+  text-align: center;
+}
+
+main .form label {
+  display: block;
+}
+
+main .input {
+  margin: 10px 0 0 5px;
+  width: 70%;
+  height: 30px;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+
+main .submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+main .submit:active {
+  opacity: 0.5;
+}
+
+main .error {
+  text-align: center;
+  color: rgba(255, 0, 0, 0.8);
+}
+
+main .place_list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main .place_list table {
+  margin: 50px auto 0 auto;
+  border-collapse: collapse;
+  border: 1px #000000 solid;
+}
+
+main .place_list table tr {
+}
+
+main .place_list table th {
+  padding: 10px;
+  border-bottom: 1px #aaa solid;
+  background-color: #ccc;
+  font-size: 20px;
+}
+
+main .place_list table th:not(:last-child) {
+  border-right: 1px #aaa solid;
+}
+
+main .place_list table td {
+  min-width: 65px;
+  line-height: 30px;
+  border-bottom: 1px #ccc solid;
+}
+
+main .place_list table td:not(:nth-child(2)) {
+  text-align: center;
+}
+
+main .place_list table td:not(:last-child) {
+  border-right: 1px #ccc solid;
+}
+
+main .place_list table td:nth-child(2) {
+  padding-left: 30px;
+}
+
+main .place_list table .get_info {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*パソコン用*/
+@media screen and (min-width: 767px) {
+  main .place_list table .get_info:hover {
+    color: orange;
+  }
+}
+
+/*タブレット・スマホ用*/
+@media screen and (max-width: 767px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  main .map {
+    height: 400px;
+  }
+
+  main .place_list table .get_info:active {
+    color: orange;
+  }
+}
