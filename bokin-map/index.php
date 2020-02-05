@@ -57,11 +57,8 @@
           });
         }
       }
-    //</script>
-<!--    local用APIキー-->
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo getenv('API_KEY') ?>&callback=initMap" async defer></script>
-<!--    本番用APIキー-->
-<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrZIvzj3PJIbODIABFlNjEkIYyhHRfTyM&callback=initMap" async defer></script>-->
     <form action="./process/map_data.php" method="post" class="form">
       <label for="id">ID:<input type="text" name="id" class="input" autocomplete="off"></label>
       <input type="submit" value="店舗を検索" class="submit">
