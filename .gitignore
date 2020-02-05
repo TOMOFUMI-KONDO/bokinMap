@@ -2,3 +2,4 @@
 .idea/**/workspace.xml
 bokin-map/test.php
 bokin-map/css/test.css
+bokin-map/.env
