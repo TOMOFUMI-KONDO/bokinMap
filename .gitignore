@@ -1,5 +1,13 @@
+#仮想マシンの設定フォルダ
 .vagrant/*
+
+#IDEのプロジェクト管理ファイル
 .idea/**/workspace.xml
+
+#テスト用のファイル
 bokin-map/test.php
 bokin-map/css/test.css
+
+#localと本番環境の環境変数ファイル
 .env
+.env.product
