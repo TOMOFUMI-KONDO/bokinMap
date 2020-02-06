@@ -89,7 +89,7 @@ main .place_list table th:not(:last-child) {
 
 main .place_list table td {
   min-width: 65px;
-  line-height: 30px;
+  line-height: 50px;
   border-bottom: 1px #ccc solid;
 }
 
