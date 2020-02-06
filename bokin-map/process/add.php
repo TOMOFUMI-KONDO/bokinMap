@@ -14,13 +14,14 @@
 //  $db = null;
 //}
 
-include "database_info/local_database_info.php";
+require_once dirname(__FILE__) . '/../config.php';
+require_once dirname(__FILE__) . '/../database_info/local_database_info.php';
 
 try {
-  $db = new PDO($dsn, $usr, $password);
-//  for ($i = 0; $i < 70; $i++) {
-//    $stt = $db->query("insert into get_info (get_info) values ('yet')");
-//  }
+  $db = getDB();
+  for ($i = 0; $i < 14; $i++) {
+    $stt = $db->query("insert into get_info (get_info) values ('yet')");
+  }
 }
 catch (PDOException $e) {
   print "error: {$e->getMessage()}";

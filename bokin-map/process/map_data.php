@@ -10,9 +10,9 @@ else {
   require_once dirname(__FILE__) . '/../database_info/remote_database_info.php';
 }
 
-$storeNumber = 72;
+$storeNumber = 86;
 $id = ((int)$_POST['id']);
-$errorIds = [6, 61];
+$errorIds = [];
 
 if ($id <= $storeNumber && $id > 0 && !in_array($id, $errorIds)) {
   try {

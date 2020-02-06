@@ -1,4 +1,4 @@
-let storeNumber = 72;
+let storeNumber = 86;
 
 for (let i = 0; i < storeNumber; i++) {
   $(`td[id="get_info[${i}]"]`).on('click', function () {
