@@ -15,12 +15,20 @@
 //}
 
 require_once dirname(__FILE__) . '/../config.php';
-require_once dirname(__FILE__) . '/../database_info/local_database_info.php';
+
+if (getenv('APP_ENV') === 'development') {
+  //localのデータベース情報
+  require_once dirname(__FILE__) . '/../database_info/local_database_info.php';
+}
+else {
+  //本番環境のデータベース情報
+  require_once dirname(__FILE__) . '/../database_info/remote_database_info.php';
+}
 
 try {
   $db = getDB();
-  for ($i = 0; $i < 14; $i++) {
-    $stt = $db->query("insert into get_info (get_info) values ('yet')");
+  for ($i = 0; $i < 85; $i++) {
+    $stt = $db->query("insert into get_info () values ()");
   }
 }
 catch (PDOException $e) {
